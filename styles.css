@@ -1,0 +1,199 @@
+/* Resetando margens e preenchimentos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2C6E49;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+nav ul li {
+    transition: transform 0.3s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFCB00;
+}
+
+/* Seções principais */
+section {
+    padding: 60px 0;
+    margin: 40px 0;
+}
+
+/* Introdução */
+#introducao {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#introducao .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#introducao h2 {
+    font-size: 2.2em;
+    color: #2C6E49;
+    margin-bottom: 20px;
+}
+
+#introducao p {
+    font-size: 1.1em;
+    max-width: 900px;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+/* Causas, Consequências e Soluções */
+h2 {
+    font-size: 2em;
+    color: #2C6E49;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-left: 40px;
+}
+
+ul li {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+ul li::before {
+    content: '•';
+    position: absolute;
+    left: -25px;
+    color: #2C6E49;
+    font-size: 1.8em;
+    top: 0;
+}
+
+/* Seções específicas */
+#causas, #consequencias, #solucoes {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+}
+
+#causas ul, #consequencias ul, #solucoes ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFCB00;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    #introducao p {
+        font-size: 1em;
+        max-width: 100%;
+        margin: 0 20px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    ul {
+        font-size: 1em;
+        margin-left: 20px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
